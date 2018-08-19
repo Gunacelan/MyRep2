@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>       
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class = "header1">
+                <div class = "flipkartImage">
+                    <a href="#">   
+                        <img width="110" src="Flipkart/fk_logo.png" alt="Flipkart" title="Flipkart">
+                    </a>
+                </div>
+
+                <form class="Headerformsearch" action="response.htm" method="GET">
+                <div class = "SearchItem">
+                    <div class="input-group">
+                        <input type="text" id="formcontrol" aria-label="..." placeholder="Search for products,brands and more">
+                    </div>
+                </div>
+
+                    <div class = 'searchicon'>
+                        <button  id = "search" type = 'submit ' onclick="getDataFromServer()">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                   </div>
+                </form>
+
+                <div class  = "HeaderDropdowns">
+                        <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        My Account
+                                  <span class="caret"></span>
+                                </button>
+                          
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">My Profile</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Order</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                     More
+                                      <span class="caret"></span>
+                                    </button>
+                              
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Sell</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Advertise</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Download app</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Offline</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                          Cart
+                                        </button>
+                                </div>
+                         </div>
+                </div>
+        </nav>
+    <header>
+
+
+        <div class = 'mainpage'>
+            <div class = 'firstblock'>
+                    <div class = "Imgheader" style = "background-image:url('Images/bg1.jpg'); ">
+                    <h2>Best of Electronic Devices</h2>
+                    </div>
+                    <div class = "firstsideblock">
+                       
+                            <div class = 'one'>
+                            <a href = "trimmer.htm">
+                            <img src=  "Images/e1.jpeg"  style = "width:100px; height:200px" >
+                            <div class = 'name'>Top trimmers</div>
+                            <div class = 'off'>From ₹449</div>
+                            <div class = 'Price'>Philips, Nova & more </div>
+                            </a>
+                        </div>
+                        <div class = 'two'>
+                                <a href = 'powerbank.htm'>
+                                <img src=  "Images/e2.jpeg" style = "width:100px; height:200px">
+                                <div class = 'name'>Intex Powerbank</div>
+                                <div class = 'off'>Under ₹799</div>
+                                <div class = 'Price'>10000mAh & more</div>
+                                
+                                </a>
+                            </div>
+
+                            <div class = 'three'>
+                                    <a href = 'temperdglass.htm'>
+                                    <img src=  "Images/e3.jpeg" style = "width:200px; height:200px">
+                                    <div class = 'name'>Tempered Glass</div>
+                                    <div class = 'off'>At ₹99</div>
+                                    <div class = 'Price'>Protect your phone</div>
+                                    
+                                    </a>
+                                </div>
+
+                                <div class = 'four'>
+                                        <a href="speakers.htm">
+                                        <img src=  "Images/e4.jpeg" style = "width:200px; height:200px">
+                                        <div class = 'name'>Laptop Speakers</div>
+                                        <div class = 'off'>From ₹ 499</div>
+                                        <div class = 'Price'>Intex, F&D</div>
+                                        
+                                        </a>
+                                 </div>
+                    </div>
+                </div>
+              <div class = 'secondblock'>
+                <div class = "Imgheader" style = "background-image:url('Images/bg2.jpg');">
+                    <h2>Top Offers On Mobiles</h2>
+                    </div>
+                    <div class = "secondsideblock">  
+                                         <div class = 'one'>
+                                         <a href="mobile1.htm">
+                                         <img src=  "Images/m1.jpeg" style = "width:100px;">
+                                         <div class = 'name'>Zenfone Max Pro M1( 4 GB)	</div>
+                                         <div class = 'off'>Flat ₹500 Off</div>
+                                         <div class = 'Price'>Now ₹12,499 </div>
+                                         </a>
+                                     </div>
+                                     <div class = 'two'>
+                                             <a href="mobile2.htm">
+                                             <img src=  "Images/m2.jpeg" style = "width:100px;">
+                                             <div class = 'name'>Honor 10 (6 GB, 128 GB) </div>
+                                             <div class = 'off'>Flat ₹6,000 Off</div>
+                                             <div class = 'Price'>Now ₹29,999 </div>
+                                             
+                                             </a>
+                                         </div>
+             
+                                         <div class = 'three'>
+                                                 <a href="mobile3.htm">
+                                                 <img src=  "Images/m3.jpeg" style = "width:100px;">
+                                                 <div class = 'name'>Asus Zenfone 5Z (6GB / 64GB)</div>
+                                                 <div class = 'off'>Extra ₹3,000  on Exch</div>
+                                                 <div class = 'Price'>Now ₹29,999</div>
+                                                 
+                                                 </a>
+                                             </div>
+             
+                                             <div class = 'four'>
+                                                     <a href="mobile4.htm">
+                                                     <img src=  "Images/m4.jpeg" style = "width:100px;">
+                                                     <div class = 'name'>OPPO A83 2018</div>
+                                                     <div class = 'off'>Flat ₹3,000 Off </div>
+                                                     <div class = 'Price'>Now ₹13,990</div>
+                                                     
+                                                     </a>
+                                             
+                                 </div>
+                    </div>
+                    
+            </div>
+            <div class = 'thirdblock'>
+                <div class = "Imgheader" style = "background-image:url('Images/bg3.jpg'); ">
+                    <h2>Blockbuster Deals</h2>
+                    </div>
+
+                <div class = "thirdsideblock">
+                        <div class = 'one'>
+                                <a href="book1.htm">
+                                <img src=  "Images/b1.jpeg" style = "width:150px;">
+                                <div class = 'name'>Small Molecule Therapy for Genetic Disease</div>
+                               <div class = 'Price'>Now ₹2,475 </div>
+                                </a>
+                            </div>
+                            <div class = 'two'>
+                                    <a href="book2.htm">
+                                    <img src=  "Images/b2.jpeg" style = "width:150px;">
+                                    <div class = 'name'>Contemporary Adulthood</div>
+                                    <div class = 'Price'>Now ₹2,475 </div>
+                                    
+                                    </a>
+                                </div>
+    
+                                <div class = 'three'>
+                                        <a  href="book3.htm">
+                                        <img src=  "Images/b3.jpeg" style = "width:150px;">
+                                        <div class = 'name'>Manorama Yearbook 2018 </div>
+                                        <div class = 'Price'>Now ₹157</div>
+                                        
+                                        </a>
+                                    </div>
+    
+                                    <div class = 'four'>
+                                            <a  href="book4.htm">
+                                            <img src=  "Images/b4.jpeg" style = "width:150px;">
+                                            <div class = 'name'>
+                                                Black Theology</div>
+                                            <div class = 'Price'>Now ₹2,405</div>
+                                            
+                                            </a>
+                                    
+                        </div>
+
+                </div>
+                    
+            </div>
+            
+
+        </div>
+
+
+        <footer>
+            <div class = 'footer'> 
+                <div class = 'first'>
+                <div class = 'head'>
+                    <h5>ABOUT</h5>
+                    <div> Contact us </div>
+                    <div> About us </div>
+                    <div> Carrers </div>
+               </div>
+
+               <div class = 'head'>
+                <h5>HELP</h5>
+                <div> Payments </div>
+                <div> Shipping </div>
+                <div> FAQ </div>
+           </div>
+
+           <div class = 'head'>
+            <h5>POLICY</h5>
+            <div> Return Policy</div>
+            <div> Terms of use</div>
+            <div> Security </div>
+       </div>
+
+       <div class = 'head'>
+        <h5>SOCIAL</h5>
+        <div> Facebook </div>
+        <div> Twitter </div>
+        <div> Youtube </div>
+   </div>
+        </div>
+
+        <div class = 'second'>
+                <h5 style = 'color:grey'> Mail us </h5>
+                <p>Flipkart Internet Pvt Ltd Block B (Begonia), </p>
+                <p> Ground Floor, Embassy Tech Village, </p>
+                 <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                <p> Karnataka, India, 560103.</p>
+                
+        </div>
+    </div>         
+        </footer>
+        
+
+       
+      
+       
+     
+        
+ 
+
+    <style>
+        
+       .navbar{
+           background-color: #2874f0;
+           height: 60px;
+       } 
+
+
+        a:hover{
+            cursor: pointer;
+        }
+
+        
+       .header1{
+           margin-left:60px;
+           margin-right: 50px;
+           margin-top:5px;
+           padding-top:10px; 
+           padding-left:20px;
+           display: block;
+           }
+
+
+        .flipkartImage{
+           display: block;
+           float: left;
+          }
+
+          .SearchItem{
+            position: relative;
+            display: block;
+            float:left;
+            margin-top:0px;
+            margin-left:10px; 
+        
+        }
+
+        #formcontrol{
+            width:500px;
+            height: 35px;
+            border-radius: 2px;
+            border-color: white;
+            border: none;
+        }
+
+        .input-group, .searchicon{
+            display: block;
+            float: left;
+        }
+        #search{
+            padding-top: 0px;
+            width:50px;
+            height: 37px;
+            background-color: white;
+        }
+
+        .Headerformsearch, .HeaderDropdowns,.dropdown{
+            display: block;
+            float: left;
+        }
+
+        .HeaderDropdowns{
+            margin-left: 180px;
+        }
+
+        #dropdownMenu1{
+            background-color: #2874f0;
+            color:#fff;
+            border: none;
+            letter-spacing: 0.1px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        .dropdown-menu{
+            margin-top:15px;
+        }
+
+        #IS{
+            width:800px;
+            height:20%;
+        }
+        .mainpage{
+            /* background-color:  #f1f3f6; */
+            box-sizing: border-box;
+            margin-top: 85px;
+
+        }
+        .firstblock,.secondblock,.thirdblock{
+            border-top:1px solid #e0e0e0;
+            box-sizing: border-box;
+            box-shadow: 5px 2px rgba(0, 0, 0, .08);
+            width:100%;
+            height: 360px;
+            background-color: white;
+            margin-bottom:25px;
+            border-color: none;
+            display: flex;
+        }
+        body{
+             background-color:#f1f3f6;
+        }
+
+        .Imgheader{
+            width:230px;
+            height: 100%;
+            background-position:0px 248px ;background-repeat:no-repeat;
+            
+        }
+        .firstblock h2, .secondblock h2, .thirdblock h2{
+            line-height:1.38; 
+            font-size:26px;
+            padding:28px 10px;
+        }
+
+         .one, .two, .three, .four{
+            display:inline-block;
+            margin-left:50px;
+            margin-top:25px;
+            margin-right: 15px;
+            text-align: center;
+        }
+
+        .name{
+            font-size: 14px;
+            color: black;
+            padding:8px;
+        }
+      
+      .off{
+          font-size: 16px;
+          color: #388e3c;
+      }
+      .Price{
+          color:grey;
+      }
+
+      footer{
+          background-color: #172337;
+          margin-top:10px;
+          width:auto;
+          height:250px;
+          color:white;
+
+      }
+
+      .head{
+          display: block;
+          float:left;
+          line-height:34px; 
+          margin-left: 35px;
+          font-size:12px;
+      }
+   
+      .head h5{
+          color:grey;
+      }
+
+      .first{
+          padding-right:30px;
+      }
+      .second{
+          display:block;
+          float: left;
+          padding-top:10px;
+          font-size:12px;
+          line-height: 8px;
+          padding-left:500px;
+      }
+    </style>
+
+
+
+<script type = 'text/javascript'>
+
+function getDataFromServer(){
+                localStorage.clear();
+                localStorage["searchvalue"] =   document.getElementById("formcontrol").value;
+                } 
+
+</script>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
